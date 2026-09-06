@@ -39,6 +39,7 @@ export const projects: Project[] = [
       "Guardian is a live, installable Progressive Web App focused on personal safety. It features an AI safety chatbot (\"ARIA\") powered by Gemini, an SOS panic trigger with live location sharing to trusted contacts, automated emergency email alerts, and free WhatsApp/SMS fallback messaging. The app uses Firebase Firestore for real-time data sync — a deliberate choice given the safety-critical, live-updating nature of the data — and includes a Stripe-powered \"Guardian Pro\" subscription tier.",
     links: {
       repo: "https://github.com/atharvd718/guardian-safety-app",
+      demo: "https://guardian-the-safety-app.vercel.app/",
     },
   },
   {
