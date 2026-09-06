@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { siteConfig } from '@/content/site';
 
 export const siteMetadata: Metadata = {
-  metadataBase: new URL('https://portfolio-website-main-rho-black.vercel.app'),
+  metadataBase: new URL('https://portfolio-ten-ashen-2cgpf5khgp.vercel.app'),
   title: `${siteConfig.name} — ${siteConfig.role}`,
   description: siteConfig.tagline,
   icons: {

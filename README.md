@@ -2,7 +2,7 @@
 
 Personal portfolio site for Atharv Deshmukh — Computer Science Undergraduate & Full Stack Web Developer. Built to showcase full-stack web applications, AI/RAG integrations, technical leadership, open-source work, and competitive programming achievements.
 
-**🔗 Live site:** [portfolio-website-main-rho-black.vercel.app](https://portfolio-website-main-rho-black.vercel.app/)
+**🔗 Live site:** [portfolio-ten-ashen-2cgpf5khgp.vercel.app](https://portfolio-ten-ashen-2cgpf5khgp.vercel.app/)
 
 ---
 
@@ -22,6 +22,12 @@ A single-page, section-based portfolio (`Hero → Workflow → About → Skills 
 | Typewriter | [react-simple-typewriter](https://www.npmjs.com/package/react-simple-typewriter) |
 | Language | TypeScript |
 | Deployment | [Vercel](https://vercel.com) |
+
+### Language Composition
+
+![TypeScript](https://img.shields.io/badge/TypeScript-96.5%25-3178C6)
+![CSS](https://img.shields.io/badge/CSS-2.8%25-1572B6)
+![JavaScript](https://img.shields.io/badge/JavaScript-0.7%25-F7DF1E)
 
 ## Features
 
