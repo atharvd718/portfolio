@@ -5,6 +5,7 @@ export const projects: Project[] = [
     id: "medisense-ai",
     title: "MediSense AI",
     status: "live",
+    role: "Team Lead — 4-member team",
     stack: [
       "Next.js 16",
       "FastAPI",
@@ -25,6 +26,7 @@ export const projects: Project[] = [
     id: "guardian",
     title: "Guardian",
     status: "live",
+    role: "Solo Developer",
     stack: [
       "Vite",
       "React",
@@ -46,6 +48,7 @@ export const projects: Project[] = [
     id: "documind-ai",
     title: "DocuMind AI",
     status: "live",
+    role: "Solo Developer",
     stack: [
       "FastAPI",
       "React",
@@ -64,6 +67,7 @@ export const projects: Project[] = [
   {
     id: "smartcart",
     title: "SmartCart",
+    role: "Solo Developer",
     stack: ["React.js", "Next.js", "Node.js", "MongoDB", "RESTful APIs"],
     description:
       "SmartCart is a responsive full-stack e-commerce application built with React.js, Next.js, Node.js and MongoDB. The application includes user authentication, a product catalog, shopping cart functionality and order management, with reusable React components and RESTful API integration across the frontend and backend.",
@@ -72,6 +76,7 @@ export const projects: Project[] = [
   {
     id: "connectify",
     title: "Connectify",
+    role: "Solo Developer",
     stack: ["React.js", "Express.js", "Node.js", "MongoDB", "RESTful APIs"],
     description:
       "Connectify is a responsive social media web application built with React.js, Express.js, Node.js and MongoDB. It supports authentication, posts, comments, likes and user profiles, with frontend and backend modules connected through RESTful APIs and organized around a clean application architecture.",
@@ -82,6 +87,7 @@ export const projects: Project[] = [
     title: "MockMate",
     status: "built",
     repoPrivate: true,
+    role: "Solo Developer",
     stack: [
       "Next.js App Router",
       "Clerk",
@@ -97,20 +103,33 @@ export const projects: Project[] = [
     links: {},
   },
   {
+    id: "synapsesync",
+    title: "SynapseSync",
+    status: "in-progress",
+    role: "Solo Developer",
+    capability: "Agentic AI + Guardrails",
+    stack: ["LLM Agents", "Notion API", "Python"],
+    description:
+      "SynapseSync is an agentic pipeline that converts practice notes into Notion entries via an LLM agent with an understand→plan→validate→guardrail flow before any write action.",
+    links: {},
+  },
+  {
     id: "sih-drdo",
-    title: "SIH PS 26153 (DRDO Problem Statement)",
+    title: "SIH PS 26153 — AI-Based Network Attack Forecasting",
     timeframe: "Aug 2026 – Present",
     status: "in-progress",
+    role: "Team — not specified",
+    capability: "ML + Networking + Cybersecurity",
     stack: [
       "PyTorch (CUDA)",
       "scikit-learn",
       "pandas",
       "NumPy",
       "Jupyter",
-      "CICIDS2017 Dataset",
+      "CIC-IDS-2018",
     ],
     description:
-      "Currently developing a machine learning solution for Smart India Hackathon problem statement PS 26153, sourced from DRDO. The project uses a GPU-accelerated PyTorch environment and the CICIDS2017 benchmark dataset, consistent with a network-security/intrusion-detection task. Model development is in progress.",
+      "Currently developing a machine learning solution for Smart India Hackathon problem statement PS 26153, sourced from DRDO. The project uses a GPU-accelerated PyTorch environment and the CIC-IDS-2018 benchmark dataset, consistent with a network-security task. A key highlight is the focus on forecasting (predictive) capabilities rather than just detection (reactive). Model development is in progress.",
     links: {},
   },
 ];

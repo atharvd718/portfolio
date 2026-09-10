@@ -19,6 +19,8 @@ export interface Project {
   timeframe?: string;
   status?: ProjectStatus;
   repoPrivate?: boolean;
+  role?: string;
+  capability?: string;
   stack: string[];
   description: string;
   links: {

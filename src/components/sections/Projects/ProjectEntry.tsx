@@ -110,6 +110,22 @@ export default function ProjectEntry({ project }: ProjectEntryProps) {
             )}
           </div>
 
+          {/* Role & Capability */}
+          {(project.role || project.capability) && (
+            <div className="flex flex-wrap gap-2">
+              {project.role && (
+                <span className="inline-flex items-center rounded-sm bg-surface/50 px-2 py-1 text-[11px] font-mono font-medium text-text-secondary border border-border uppercase tracking-wider">
+                  Role: {project.role}
+                </span>
+              )}
+              {project.capability && (
+                <span className="inline-flex items-center rounded-sm bg-surface/50 px-2 py-1 text-[11px] font-mono font-medium text-text-secondary border border-border uppercase tracking-wider">
+                  {project.capability}
+                </span>
+              )}
+            </div>
+          )}
+
           {/* Stack Tags */}
           <div className="flex flex-wrap gap-2">
             {project.stack.map((tech) => (
