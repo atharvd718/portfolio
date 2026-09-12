@@ -21,11 +21,13 @@ export interface Project {
   repoPrivate?: boolean;
   role?: string;
   capability?: string;
+  screenshot?: string;
   stack: string[];
   description: string;
   links: {
     repo?: string;
     demo?: string;
+    presentation?: string;
   };
 }
 

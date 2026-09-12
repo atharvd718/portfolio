@@ -58,9 +58,9 @@ const getThumbnailConfig = (projectId: string): ThumbnailConfig => {
 const SCREENSHOT_MAP: Record<string, string> = {};
 
 export default function ProjectEntry({ project }: ProjectEntryProps) {
-  const hasLinks = !!(project.links.repo || project.links.demo || project.repoPrivate);
+  const hasLinks = !!(project.links.repo || project.links.demo || project.repoPrivate || project.links.presentation);
   const { backgroundImage, badgeText } = getThumbnailConfig(project.id);
-  const screenshotUrl = SCREENSHOT_MAP[project.id];
+  const screenshotUrl = project.screenshot || SCREENSHOT_MAP[project.id];
 
   return (
     <FadeInSection>
@@ -144,6 +144,11 @@ export default function ProjectEntry({ project }: ProjectEntryProps) {
               {project.links.repo && (
                 <LinkButton href={project.links.repo} variant="subtle" className="w-full sm:w-auto py-2">
                   View on GitHub
+                </LinkButton>
+              )}
+              {project.links.presentation && (
+                <LinkButton href={project.links.presentation} variant="subtle" className="w-full sm:w-auto py-2">
+                  View Presentation
                 </LinkButton>
               )}
               {project.repoPrivate && (

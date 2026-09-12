@@ -6,6 +6,7 @@ export const projects: Project[] = [
     title: "MediSense AI",
     status: "live",
     role: "Team Lead — 4-member team",
+    screenshot: "/images/projects/medisense-how-it-works.png",
     stack: [
       "Next.js 16",
       "FastAPI",
@@ -115,10 +116,10 @@ export const projects: Project[] = [
   },
   {
     id: "sih-drdo",
-    title: "SIH PS 26153 — AI-Based Network Attack Forecasting",
+    title: "NETFOREC — AI-Based Network Attack Forecasting (SIH PS 26153)",
     timeframe: "Aug 2026 – Present",
     status: "in-progress",
-    role: "Team — not specified",
+    role: "Team RuntimeErrors — SIH 2026 Internal Hackathon",
     capability: "ML + Networking + Cybersecurity",
     stack: [
       "PyTorch (CUDA)",
@@ -126,10 +127,13 @@ export const projects: Project[] = [
       "pandas",
       "NumPy",
       "Jupyter",
-      "CIC-IDS-2018",
+      "CIC-IDS2018",
     ],
     description:
-      "Currently developing a machine learning solution for Smart India Hackathon problem statement PS 26153, sourced from DRDO. The project uses a GPU-accelerated PyTorch environment and the CIC-IDS-2018 benchmark dataset, consistent with a network-security task. A key highlight is the focus on forecasting (predictive) capabilities rather than just detection (reactive). Model development is in progress.",
-    links: {},
+      "PS 26153 is a DRDO-sourced Smart India Hackathon 2026 problem statement — the goal is forecasting network attacks BEFORE they happen (predictive), not just detecting them as they occur (reactive). This matters for defense and critical-infrastructure network security where early warning gives responders time to act. To solve this, Atharv and Team RuntimeErrors are developing a machine learning solution using a GPU-accelerated PyTorch environment and the CIC-IDS2018 benchmark dataset. It features a robust CLI tool (`netforec analyze`), an LSTM architecture (2 layers, 30-min history → 15-min forecast), and 7-class threat classification (DDoS, DoS, Botnet, Web Attack, Brute Force, Infiltration, No Attack). Model development is in progress.",
+    links: {
+      repo: "https://github.com/atharvd718/netforec-sih.git",
+      presentation: "https://docs.google.com/presentation/d/1J_rnlAjvUkayuygu8XcA07FRU8fzDwID/view",
+    },
   },
 ];
