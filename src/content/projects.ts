@@ -2,6 +2,30 @@ import { Project } from "@/types/content";
 
 export const projects: Project[] = [
   {
+    id: "upi-offline-mesh",
+    title: "UPI Offline Mesh",
+    status: "built",
+    role: "Solo Developer",
+    capability: "Java Backend Engineering + Applied Cryptography",
+    stack: [
+      "Java 17",
+      "Spring Boot 3.3.5",
+      "Spring Web",
+      "Spring Data JPA",
+      "Thymeleaf",
+      "H2 Database",
+      "Maven",
+      "JUnit 5",
+      "RSA-OAEP",
+      "AES-256-GCM",
+    ],
+    description:
+      "A Spring Boot backend simulating offline UPI payment settlement routed through a software-simulated Bluetooth-style mesh network. Solves three distinct hard problems: (1) untrusted intermediaries — hybrid RSA-OAEP + AES-256-GCM encryption so relaying devices can't read or tamper with payloads, (2) concurrent duplicate delivery — atomic compare-and-set idempotency on SHA-256 ciphertext hash, verified with a multithreaded JUnit test asserting exactly-once settlement, (3) replay attacks — signed timestamps + nonces protected by GCM auth tags. Includes a full gossip-protocol mesh simulator and live dashboard for demoing the pipeline end-to-end on one machine.",
+    links: {
+      repo: "https://github.com/atharvd718/Java-Spring-Boot-Project-UPI-without-internet",
+    },
+  },
+  {
     id: "medisense-ai",
     title: "MediSense AI",
     status: "live",

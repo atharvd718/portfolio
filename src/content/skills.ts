@@ -3,7 +3,7 @@ import { SkillGroup } from "@/types/content";
 export const skills: SkillGroup[] = [
   {
     label: "Languages",
-    skills: ["C++", "JavaScript (ES6+)", "TypeScript", "Python", "HTML5", "CSS3"],
+    skills: ["Java", "C++", "JavaScript (ES6+)", "TypeScript", "Python", "HTML5", "CSS3"],
   },
   {
     label: "Frontend",
@@ -20,7 +20,7 @@ export const skills: SkillGroup[] = [
   },
   {
     label: "Backend",
-    skills: ["Node.js", "Express.js", "FastAPI", "RESTful APIs"],
+    skills: ["Node.js", "Express.js", "FastAPI", "Spring Boot", "Spring Data JPA", "RESTful APIs"],
   },
   {
     label: "Databases & ORMs",
