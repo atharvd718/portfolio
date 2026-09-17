@@ -26,6 +26,29 @@ export const projects: Project[] = [
     },
   },
   {
+    id: "student-mental-health-predictor",
+    title: "Student Mental Health Score Predictor",
+    status: "live",
+    role: "Solo Developer",
+    capability: "Machine Learning + Data Science",
+    stack: [
+      "Python",
+      "pandas",
+      "NumPy",
+      "scikit-learn",
+      "Streamlit",
+      "joblib",
+      "matplotlib",
+      "seaborn",
+    ],
+    description:
+      "An end-to-end trained ML web application predicting a student's Mental Health Score (0-10) from social media usage, sleep, study habits, and stress levels. Representing the first portfolio project trained entirely from raw data rather than orchestrating an existing LLM API, it involved training and comparing three regression models on 5,000 student records: a Linear Regression baseline (test R²=0.740), a default Random Forest (test R²=0.878, MAE=0.347), and a tuned Random Forest via RandomizedSearchCV (test R²=0.865). The simpler default Random Forest was shipped because it outperformed the tuned version on held-out data, and the resulting train/test overfitting gap (train R²=0.981 vs test R²=0.878) is openly documented rather than hidden. The final model is wrapped as a single scikit-learn Pipeline and served through a Streamlit interface featuring persona presets and rule-based lifestyle recommendations.",
+    links: {
+      repo: "https://github.com/atharvd718/ml_project_student_social_media_mental_health",
+      demo: "https://mlprojectstudentsocialmediamentalhealth-4bbt8srjmxoyqbk9eyaudj.streamlit.app/",
+    },
+  },
+  {
     id: "medisense-ai",
     title: "MediSense AI",
     status: "live",
