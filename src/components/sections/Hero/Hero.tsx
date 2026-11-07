@@ -48,7 +48,6 @@ export default function Hero() {
               {siteConfig.role}
             </p>
 
-
             {/* Typing Tagline - Fixed height container */}
             <div className="font-sans text-lg md:text-xl text-text-secondary min-h-[85px] md:min-h-[95px] h-auto w-full mb-6 flex items-center overflow-visible py-2">
               <Typewriter
@@ -70,6 +69,9 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center justify-center lg:justify-start w-full max-w-sm sm:max-w-none mx-auto lg:mx-0">
               <LinkButton href="#projects" variant="primary" className="w-full sm:w-auto">
                 View Projects
+              </LinkButton>
+              <LinkButton href="#resume" variant="subtle" className="w-full sm:w-auto py-2">
+                Resume
               </LinkButton>
               <LinkButton href="#contact" variant="subtle" className="w-full sm:w-auto py-2">
                 Let&apos;s Talk

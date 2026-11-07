@@ -52,6 +52,7 @@ export default function Navbar() {
     { label: 'Projects', href: '#projects' },
     { label: 'Experience', href: '#experience' },
     { label: 'Achievements', href: '#achievements' },
+    { label: 'Resume', href: '#resume' },
     { label: 'Contact', href: '#contact' },
   ];
 
